@@ -1,0 +1,18 @@
+# Student Name Thomas Ghebray
+# Student PSID 1889967 
+
+# How can I input the the num values
+
+num_values = input()
+
+# How can I incorporate the List values 
+
+list_values = [int(num) for num in num_values.split() if int(num) >-1]
+
+list_values.sort()
+
+
+# How can I include the values in the list
+
+for value in list_values:
+    print(value, end = ' ')
