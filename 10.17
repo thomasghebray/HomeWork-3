@@ -1,0 +1,64 @@
+# Student Name Thomas Ghebray
+# Student ID 1889967
+
+class ItemToPurchase:
+    #default integer
+    #define int
+
+    def __init__(self):
+        self.item_name = "none"
+        self.item_description = "none"
+        self.item_price = 0
+        self.item_quantity = 0
+    # create a print function for the cost
+
+    def print_item_cost(self):
+        print(self.item_name)
+        print(self.item_quantity)
+        print(self.item_price)
+
+    # create a way to implement the item description
+
+    def print_item_description(self):
+        print("Item Name: ",self.item_name)
+        print("Description: ",self.item_description)
+
+# define the information from the user input
+
+    name1 = input("Item 1\n")
+    description1 = input("Enter the item name:\n")
+    price1 = input("Enter the item price:\n")
+    quantity1 = input("Enter the item quantity:\n")
+    ("\n")
+# Create input names for name 2
+
+    name2 = input("Item 2\n")
+    description2 = input("Enter the item name:\n ")
+    price2 = input("Enter the item price:\n")
+
+# How will I allow for functionality for Items for purchasing
+
+    obj1 = ItemToPurchase()
+    obj2 = ItemToPurchase()
+
+
+# Using Num fy
+    obj1.item_name = name1
+    obj1.item_description = description1
+    obj.item_name = name1
+    obj.item_price = price1
+    obj.item_quantity = quantity1
+
+    obj1.item_name = name2
+    obj1.item_description = description2
+    obj.item_price = price2
+    obj.item_quantity = quantity2
+
+# How Can I write a code that will output the total cost
+
+    cost1=float(obj1.item_price) * int(obj1.item_quantity)
+    cost2=float(obj2.item_price) * int(obj2.item_quantity)
+    print("Totals Cost: ",cost1+cost2)
+
+    obj1.print_item_description()
+    obj2.print_item_description()
